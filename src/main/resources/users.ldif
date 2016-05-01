@@ -1,0 +1,31 @@
+dn: ou=groups,dc=digitalpanda,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+dn: ou=people,dc=habuma,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+dn: uid=joel,ou=people,dc=digitalpanda,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Joel Vallone
+sn: Vallone
+uid: joel
+userPassword: joel
+dn: uid=angela,ou=people,dc=digitalpanda,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Angela Vallone
+sn: Vallone
+uid: angela
+userPassword: angela
+dn: cn=spittr,ou=groups,dc=digitalpanda,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: spittr
+member: uid=joel,ou=people,dc=digitalpanda,dc=org
