@@ -8,7 +8,7 @@
 	href="<s:url value="/resources/css/style.css" />">
 </head>
 <body>
-	<div id="header">
+	<div id="header" style="width:100%;">
 		<t:insertAttribute name="header" />
 	</div>
 	<div id="content">

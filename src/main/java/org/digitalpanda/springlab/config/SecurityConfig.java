@@ -29,7 +29,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .httpBasic();*/
         http
         .formLogin()
-        // .loginPage("/login")
+         //.loginPage("/login")
+         .and()
+         .logout()
+             .logoutSuccessUrl("/")
         .and()
         .rememberMe()
         .tokenValiditySeconds(7200)
@@ -41,8 +44,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         /*
         .antMatchers("/presentation/main")
-            .access("hasRole('ROLE_SPITTER') and hasIpAddress('127.0.0.1')")*/
-        .antMatchers(HttpMethod.POST, "/springlab/**")
+            .access("hasRole('ROLE_SPITTER') and hasIpAddress('127.0.0.1')")
+        .antMatchers(HttpMethod.POST, "/springlab/**")*/
+        .antMatchers("/springlab/**")
             .hasAuthority("ROLE_SPITTER")
         .anyRequest().permitAll()
         .and()

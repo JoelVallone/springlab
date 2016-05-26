@@ -13,6 +13,10 @@
 		<put-attribute 	name="body"
 				value="/WEB-INF/views/multiplexer.jsp" />
 	</definition>		
+	<definition name="login" extends="base">
+		<put-attribute 	name="body"
+				value="/WEB-INF/views/login.jsp" />
+	</definition>		
 	<definition name="springlab-main" extends="base">
 		<put-attribute 	name="body"
 				value="/WEB-INF/views/springlab/main.jsp" />
@@ -42,9 +46,4 @@
 		<put-attribute 	name="body"
 				value="/WEB-INF/views/springlab/spittleForm.jsp" />
 	</definition>	
-		
-	<definition name="login" extends="base">
-		<put-attribute 	name="body"
-				value="/WEB-INF/views/springlab/login.jsp" />
-	</definition>
 </tiles-definitions>

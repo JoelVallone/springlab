@@ -30,7 +30,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value="/presentation", method = RequestMethod.GET )
-	public String mariage() {
+	public String presentation() {
 	    return "redirect:main";
 	}
 	
@@ -38,6 +38,11 @@ public class HomeController {
     public String springlab() {
         return "redirect:main";
     }
+   
+   @RequestMapping(value="/login", method = RequestMethod.GET )
+   public String login() {
+       return "login";
+   }
 
 	
 }
